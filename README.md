@@ -61,3 +61,5 @@ npm start
 cd profile &&
 npm install &&
 npm start
+
+Accedere alla pagina localhost:4200/home
