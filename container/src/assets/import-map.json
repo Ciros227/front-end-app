@@ -1,6 +1,8 @@
 {
   "imports": {
     "child1": "http://localhost:4201/main.js",
-    "child2": "http://localhost:4202/main.js"
+    "child2": "http://localhost:4202/main.js",
+    "home": "http://localhost:4203/main.js",
+    "profile": "http://localhost:4204/main.js"
   }
 }

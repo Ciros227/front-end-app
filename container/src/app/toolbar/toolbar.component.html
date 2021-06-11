@@ -1,0 +1,32 @@
+<mat-toolbar class="mat-elevation-z8">
+  <mat-form-field floatLabel="never" >
+    <mat-label>Categorie</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let category of categories" [value]="category.value">
+        {{category.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" floatLabel="never">
+    <mat-label>Search</mat-label>
+    <input matInput
+           aria-label="State"
+           [matAutocomplete]="auto"
+           [formControl]="stateCtrl">
+    <mat-icon (click)="searchIt()">search</mat-icon>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let store of filteredStores | async" [value]="store.name">
+        <img class="example-option-img" aria-hidden [src]="store.logo" height="25">|
+        <span>{{store.name}}</span>
+      </mat-option>
+    </mat-autocomplete>
+
+  </mat-form-field>
+  <span class="example-spacer"></span>
+  <mat-icon>notifications</mat-icon>
+  <mat-icon>shopping_cart</mat-icon>
+</mat-toolbar>
+
+
+
