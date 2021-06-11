@@ -35,3 +35,29 @@ This example was originally created as part of this presentation: [youtube link]
 
 Here are the associated slides: [slides](https://docs.google.com/presentation/d/18zoaEm3PqQ6DgbcJNYh_Ho6EnO75AnRw5PKz3HlXI7Y/edit?usp=sharing)
 # front-end-app
+To run application:
+
+#container
+cd container &&
+npm install &&
+npm start
+
+#home
+cd home &&
+npm install &&
+npm start
+
+#child1
+cd child1 &&
+npm install &&
+npm start
+
+#child2
+cd child2 &&
+npm install &&
+npm start
+
+#profile
+cd profile &&
+npm install &&
+npm start
